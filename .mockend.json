@@ -1,9 +1,4 @@
 {
-   "RESPONSE_HEADER":{
-      "responseStatus":"SUCCESS",
-      "responseMessage":"Successfully completed."
-   },
-   "RESPONSE_BODY":{
       "totalProductiveOutlets":[
          "{\"region\": null, \"salesArea\": null, \"productiveOutletCount\": 0}"
       ],
