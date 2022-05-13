@@ -1,15 +1,14 @@
 {
-      "totalProductiveOutlets":[
-         "{\"region\": null, \"salesArea\": null, \"productiveOutletCount\": 0}"
-      ],
-      "totalOutlets":[
-         "{\"region\": \"East\", \"salesArea\": \"Zone 5\", \"totalCustomerCount\": 669}"
-      ],
-      "orderValue":[
-          "{\"empId\": null, \"region\": null, \"empName\": null, \"orderDate\": \"2022-05-13 9:11:00.000000\", \"salesArea\": null, \"customerId\": \"1004002\", \"orderMonth\": \"Apr-2022\", \"customerName\": \"Bhargav\", \"totalOrderQty\": 33.00, \"numberOfOrders\": 34, \"totalOrderValue\": \"91,380.00\", \"totalNetOrderValue\": 91380}",
-"{\"empId\": null, \"region\": null, \"empName\": null, \"orderDate\": \"2022-05-13 12:11:00.000000\", \"salesArea\": null, \"customerId\": \"1004002\", \"orderMonth\": \"Apr-2022\", \"customerName\": \"Bhargav\", \"totalOrderQty\": 33.00, \"numberOfOrders\": 34, \"totalOrderValue\": \"91,380.00\", \"totalNetOrderValue\": 91380}",
-"{\"empId\": null, \"region\": null, \"empName\": null, \"orderDate\": \"2022-05-13 14:11:00.000000\", \"salesArea\": null, \"customerId\": \"1004002\", \"orderMonth\": \"Apr-2022\", \"customerName\": \"Bhargav\", \"totalOrderQty\": 33.00, \"numberOfOrders\": 34, \"totalOrderValue\": \"91,380.00\", \"totalNetOrderValue\": 91380}",
-"{\"empId\": null, \"region\": null, \"empName\": null, \"orderDate\": \"2022-05-13 15:11:00.000000\", \"salesArea\": null, \"customerId\": \"1004002\", \"orderMonth\": \"Apr-2022\", \"customerName\": \"Bhargav\", \"totalOrderQty\": 33.00, \"numberOfOrders\": 34, \"totalOrderValue\": \"91,380.00\", \"totalNetOrderValue\": 91380}"
-      ]
-   }
+  "Post": {
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
+    }
+  }
 }
